@@ -114,7 +114,7 @@
         <hr>
 
         <div class="footer-bottom">
-          <p>Made with ❤️ by <a href="#">@Kelompok 4</a></p>
+          <p>Made with ❤️ by <a href="https://github.com/prmditya/smart-lele">@Kelompok 4</a></p>
           <p>Copyright © 2025 All Rights Reserved.</p>
         </div>
     </footer>
