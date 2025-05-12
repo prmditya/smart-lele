@@ -16,6 +16,7 @@ void setup() {
 
 void loop() {
   readSensorData();
+  delay(1000);
   makePrediction();
   sendDataIfReady();
 }

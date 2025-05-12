@@ -3,7 +3,7 @@
 #include <HTTPClient.h>
 #include "utils.h"
 
-const char* SERVER_URL = "http://192.168.100.17/insert_data.php";
+const char* SERVER_URL = "http://192.168.1.15/insert_data.php";
 const unsigned long SEND_INTERVAL = 1 * 60 * 1000;  // 1 minute
 
 unsigned long previousMillis = 0;

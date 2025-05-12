@@ -4,7 +4,7 @@
 #include <./lib/tflm_esp32.h>
 #include <eloquent_tinyml.h>
 
-#define ARENA_SIZE 10000
+#define ARENA_SIZE 20000
 
 // Standardization constants
 #define PH_MEAN 7.500265
@@ -14,7 +14,7 @@
 #define TURB_MEAN 5.122034
 #define TURB_STD 2.561515
 
-Eloquent::TF::Sequential<TF_NUM_OPS, ARENA_SIZE> tf;
+Eloquent::TF::Sequential<TF_NUM_OPS + 1, ARENA_SIZE> tf;
 
 void initModel() {
   tf.setNumInputs(3);
