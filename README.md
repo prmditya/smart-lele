@@ -2,8 +2,10 @@
 
   <img src="https://github.com/user-attachments/assets/44907e4d-4fe7-4ab7-9543-1e6b78d0e666" width=100/>
   
-  </hr>
-  
+</div>
+<br>
+<div align=center>
+
   ![License](https://img.shields.io/badge/license-MIT-blue)
   ![Contributors](https://img.shields.io/github/contributors/prmditya/smart-lele)
 
