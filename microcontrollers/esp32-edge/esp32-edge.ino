@@ -15,6 +15,8 @@ void setup() {
 }
 
 void loop() {
+  if (!isWiFiConnected())
+    connectWiFi();
   readSensorData();
   delay(1000);
   makePrediction();

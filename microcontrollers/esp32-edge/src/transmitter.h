@@ -3,7 +3,7 @@
 #include <HTTPClient.h>
 #include "utils.h"
 
-const char* SERVER_URL = "http://192.168.1.15/insert_data.php";
+const char* SERVER_URL = "http://smart-lele.my.id/insert_data.php";
 const unsigned long SEND_INTERVAL = 1 * 60 * 1000;  // 1 minute
 
 unsigned long previousMillis = 0;
@@ -12,7 +12,7 @@ WiFiClient client;
 HTTPClient http;
 
 void sendDataToServer(const String& payload) {
-  if (WiFi.status() != WL_CONNECTED) {
+  if (!isWiFiConnected()) {
     Serial.println("WiFi disconnected. Reconnecting...");
     connectWiFi();
     return;

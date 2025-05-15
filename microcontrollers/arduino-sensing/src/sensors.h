@@ -28,7 +28,7 @@ float readTurbidity() {
   int cleanADC = 450;
   int dirtyADC = 200;
   float turbidityNTU = map(avg, cleanADC, dirtyADC, 0, 2000);
-  float result = constrain(0, 2000);
+  float result = constrain(turbidityNTU, 0, 2000);
   if (result < 0)
     return 0;
 

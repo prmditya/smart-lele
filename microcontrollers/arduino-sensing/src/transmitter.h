@@ -5,6 +5,9 @@ SoftwareSerial espSerial(RX_SOFT, TX_SOFT);
 void sendDataToESP32() {
   Serial.println("Mengirim Data Ke ESP32");
 
+  if (!isSensorDataValid())
+    return;
+
   // Data format: pH,temp,turbidity,level
   String data = String(waterPH) + "," + String(waterTemp) + "," + String(turbidity) + "," + String(waterLevelCM);
 

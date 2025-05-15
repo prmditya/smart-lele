@@ -14,3 +14,7 @@ const float PH7_VOLTAGE = 3.1;
 const float PH918_VOLTAGE = 2.4;
 
 extern float waterTemp = 0, waterPH = 0, turbidity = 0, waterLevelCM = 0;
+
+bool isSensorDataValid() {
+  return (waterPH != -1 && waterTemp != -1 && turbidity != -1 && waterLevelCM != -1);
+}
