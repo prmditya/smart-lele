@@ -1,12 +1,12 @@
-CREATE DATABASE IF NOT EXISTS smartlele;
+CREATE DATABASE IF NOT EXISTS smartleledb;
 
-USE smartlele;
+USE smartleledb;
 
 CREATE TABLE sensor_data (
   id INT AUTO_INCREMENT PRIMARY KEY,
   ph FLOAT,
-  temperature FLOAT,
+  temp FLOAT,
   turbidity FLOAT,
-  water_level FLOAT,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  waterLevel FLOAT,
+  waktu TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
