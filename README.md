@@ -1,7 +1,9 @@
 <div align=center>
 
-  <img src="./web-dev/smart-lele/app/public/assets/smartlele-icon.png" width=100>
-
+  <img src="https://github.com/user-attachments/assets/44907e4d-4fe7-4ab7-9543-1e6b78d0e666" width=100/>
+  
+  </hr>
+  
   ![License](https://img.shields.io/badge/license-MIT-blue)
   ![Contributors](https://img.shields.io/github/contributors/prmditya/smart-lele)
 
@@ -27,7 +29,7 @@ Smart Lele is an AIoT project designed to monitor and control catfish pond envir
 
 1. **Clone the repository:**
    ```
-   git clone https://github.com/yourusername/smart-lele.git
+   git clone https://github.com/prmditya/smart-lele.git
    ```
 
 ## Folder Structure
