@@ -17,6 +17,13 @@ resource "aws_security_group" "ec2_sg" {
     cidr_blocks = ["0.0.0.0/0"] # HTTP
   }
 
+  ingress {
+    from_port   = 443
+    to_port     = 443
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"] # HTTPS
+  }
+
   egress {
     from_port   = 3306
     to_port     = 3306
@@ -48,4 +55,12 @@ resource "aws_instance" "web" {
     Name = "smart-lele-ec2"
   }
 }
+resource "aws_eip" "web_eip" {
+  instance = aws_instance.web.id
+}
+
+output "elastic_ip" {
+  value = aws_eip.web_eip.public_ip
+}
+
 

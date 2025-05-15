@@ -1,3 +1,18 @@
+resource "aws_db_parameter_group" "smartlele_rds_parameter" {
+  name        = "smartlele-mysql-params"
+  family      = "mysql8.0"
+  description = "RDS MySQL timezone Asia/Jakarta"
+
+  parameter {
+    name  = "time_zone"
+    value = "Asia/Bangkok"
+  }
+
+  tags = {
+    Name = "smartlele-mysql-params"
+  }
+}
+
 resource "aws_security_group" "rds_sg" {
   name        = "smart-lele-rds-sg"
   description = "Allow DB access from EC2"
@@ -30,6 +45,7 @@ resource "aws_db_instance" "smart_lele_db" {
   publicly_accessible    = false
   db_subnet_group_name   = aws_db_subnet_group.smartlele_db_subnet_group.name
   vpc_security_group_ids = [aws_security_group.rds_sg.id]
+  parameter_group_name   = aws_db_parameter_group.smartlele_rds_parameter.name
 }
 
 resource "aws_db_subnet_group" "smartlele_db_subnet_group" {
