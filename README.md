@@ -18,15 +18,6 @@ Smart Lele is an AIoT project designed to monitor and control catfish pond envir
 - Real-time monitoring of temperature, pH, and water level
 - AI powered water quality control
 
-## Hardware Requirements
-
-- Microcontroller (ESP32, Arduino)
-- Temperature sensor (DS18B20)
-- pH sensor
-- Water level sensor
-- Relays
-- LCD display (optional)
-
 ## Getting Started
 
 1. **Clone the repository:**
