@@ -11,6 +11,10 @@
 
 </div>
 
+Screenshots:
+
+![image](https://github.com/user-attachments/assets/a66f1762-7646-4655-ae45-1aded773b46a)
+
 Smart Lele is an AIoT project designed to monitor and control catfish pond environments. It leverages sensors and actuators to automate tasks for controlling water quality.
 
 ## **Features**
