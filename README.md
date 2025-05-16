@@ -13,31 +13,37 @@
 
 Smart Lele is an AIoT project designed to monitor and control catfish pond environments. It leverages sensors and actuators to automate tasks for controlling water quality.
 
-## Features
+## **Features**
 
 - Real-time monitoring of temperature, pH, and water level
 - AI powered water quality control
 
-## Getting Started
+## **Getting Started**
 
 1. **Clone the repository:**
    ```
    git clone https://github.com/prmditya/smart-lele.git
    ```
 
-## Folder Structure
+## **Folder Structure**
 
 ```
 smart-lele/
 ├── cloud/            # Cloud Architecture
-├── hardware/         # Schematic
+├── hardware/         # Hardware schematic
 ├── microcontrollers/ # Main Microcontrollers code
 ├── model-dev/        # Model development code
 ├── web-dev/          # Web development code
 └── README.md
 ```
-## Acknowledgement
+## Acknowledgements
 
-## License
+I would like to express my gratitude to the following resources and individuals who contributed to this project:
 
-This project is licensed under the MIT License. See `LICENSE` for details.## Contributing
+- The source dataset for this project : [Real-Time Pond Water Dataset for Fish Farming](https://www.kaggle.com/datasets/monirmukul/realtime-pond-water-dataset-for-fish-farming).
+- I would also like to thank my friends, [Gilang Putro P.](), [Chairulianyah Ananda P.](), [Ahmad Fajar M.](), and [Pranadja Anegra A.](), for their support and assistance throughout the development of this project.
+
+
+## **License**
+
+This project is licensed under the MIT License. See `LICENSE` for details.
