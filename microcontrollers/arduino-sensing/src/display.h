@@ -28,4 +28,14 @@ void printSensorData() {
   lcd.print(" WL:");
   lcd.print(waterLevelCM, 0);
   lcd.print("cm");
+  delay(2000);
+}
+
+void waterQualityAlert() {
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("Kualitas Air");
+  lcd.setCursor(0, 1);
+  lcd.print("Tidak baik");
+  delay(2000);
 }

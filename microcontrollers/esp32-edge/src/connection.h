@@ -8,9 +8,9 @@ struct WiFiCredential {
 };
 
 const std::vector<WiFiCredential> networks = {
-  { "thokayna", "hasnakamila" },     // Prioritas utama
-  { "HIFI", "11223344" },            // Backup 1
-  { "Galaxy A22 D38D", "password" }  // Jaringan terakhir
+  { "thokayna", "hasnakamila" },  // Prioritas utama
+  { "HIFI", "11223344" },         // Backup 1
+  { "Smart-Lele", "password" }    // Backup
 };
 
 bool connectWiFi() {

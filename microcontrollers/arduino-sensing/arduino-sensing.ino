@@ -3,7 +3,6 @@
 #include <DallasTemperature.h>
 #include <SoftwareSerial.h>
 #include <LiquidCrystal_I2C.h>
-#include <softwareserial.h>
 
 #include "./src/globals.h"
 

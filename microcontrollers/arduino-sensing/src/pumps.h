@@ -15,6 +15,7 @@ void controlPump(int prediction) {
     Serial.println("POMPA MATI");
     turnOffAllPumps();
   } else {
+    waterQualityAlert();
     Serial.println("POMPA HIDUP");
     fillAndDrainPumpOn();
   }
