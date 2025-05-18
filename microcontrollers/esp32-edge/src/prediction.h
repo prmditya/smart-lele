@@ -3,6 +3,7 @@
 #include "./model/smartLeleModel.h"
 #include <./lib/tflm_esp32.h>
 #include <eloquent_tinyml.h>
+#include "utils.h"
 
 #define ARENA_SIZE 20000
 
@@ -44,6 +45,8 @@ float standardize(float x, float mean, float std) {
 }
 
 void makePrediction() {
+  if (!isInputValid()) return;
+
   float input[3] = {
     standardize(lastPh, PH_MEAN, PH_STD),
     standardize(lastTemp, TEMP_MEAN, TEMP_STD),

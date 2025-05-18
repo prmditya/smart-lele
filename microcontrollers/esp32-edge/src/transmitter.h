@@ -33,6 +33,7 @@ void sendDataToServer(const String& payload) {
 
 void sendDataIfReady() {
   if (!newDataAvailable) return;
+  if (!isInputValid()) return;
 
   unsigned long currentMillis = millis();
   if (currentMillis - previousMillis < SEND_INTERVAL) return;
