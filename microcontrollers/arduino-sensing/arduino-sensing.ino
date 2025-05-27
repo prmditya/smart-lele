@@ -36,8 +36,14 @@ void setup() {
 
 void loop() {
   readSensors();
-  printSensorData();
-  sendDataToESP32();
+  
+  if (isSensorDataValid()){
+    printSensorData();
+    sendDataToESP32();
+  }else {
+    Serial.println("Terdapat data tidak valid");
+  }
+
   readDataFromESP32();
   delay(2000);
 }

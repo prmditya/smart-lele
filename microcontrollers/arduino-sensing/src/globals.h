@@ -10,10 +10,12 @@
 #define ULTRASONIC_TRIG_PIN 8
 #define ULTRASONIC_ECHO_PIN 9
 
-const float PH7_VOLTAGE = 3.1;
-const float PH918_VOLTAGE = 2.4;
+const float PH7_VOLTAGE = 3.4;
+const float PH918_VOLTAGE = 2.7;
 
 extern float waterTemp = 0, waterPH = 0, turbidity = 0, waterLevelCM = 0;
+
+extern int receivedLabel = 1;
 
 bool isSensorDataValid() {
   return (waterPH != -1 && waterTemp != -1 && turbidity != -1 && waterLevelCM != -1);
