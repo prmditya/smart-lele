@@ -15,7 +15,7 @@
 #define TURB_MEAN 5.122034
 #define TURB_STD 2.561515
 
-Eloquent::TF::Sequential<TF_NUM_OPS + 2, ARENA_SIZE> tf;
+Eloquent::TF::Sequential<TF_NUM_OPS + 3, ARENA_SIZE> tf;
 
 void initModel() {
   // Register model layers (adjust if model has more layers)
