@@ -8,12 +8,12 @@
 #define ARENA_SIZE 10000
 
 // Standardization constants
-#define PH_MEAN 7.500265
-#define PH_STD 0.706338
-#define TEMP_MEAN 24.228911
-#define TEMP_STD 4.592424
-#define TURB_MEAN 5.122034
-#define TURB_STD 2.561515
+#define PH_MEAN 7.514412
+#define PH_STD 0.841878
+#define TEMP_MEAN 28.951765
+#define TEMP_STD 0.604039
+#define TURB_MEAN 0.941176
+#define TURB_STD 5.487955 	
 
 Eloquent::TF::Sequential<TF_NUM_OPS + 3, ARENA_SIZE> tf;
 
