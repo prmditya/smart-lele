@@ -1,6 +1,8 @@
 #pragma once
 
 #include <HTTPClient.h>
+#include <WiFiClientSecure.h>
+
 #include "utils.h"
 
 const char* SERVER_URL = "https://smart-lele.my.id/insert_data.php";
@@ -8,7 +10,7 @@ const unsigned long SEND_INTERVAL = 1 * 60 * 1000;  // 1 minute
 
 unsigned long previousMillis = 0;
 
-WiFiClient client;
+WiFiClientSecure client;
 HTTPClient http;
 
 void sendDataToServer(const String& payload) {
@@ -17,6 +19,8 @@ void sendDataToServer(const String& payload) {
     connectWiFi();
     return;
   }
+
+  client.setInsecure();
 
   http.begin(client, SERVER_URL);
   http.addHeader("Content-Type", "application/x-www-form-urlencoded");

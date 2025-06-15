@@ -43,7 +43,7 @@ float readWaterLevel() {
   digitalWrite(ULTRASONIC_TRIG_PIN, LOW);
 
   long duration = pulseIn(ULTRASONIC_ECHO_PIN, HIGH, 30000);
-  return (duration * 0.034 / 2);
+  return 24 - (duration * 0.034 / 2);
 }
 
 void readSensors() {
