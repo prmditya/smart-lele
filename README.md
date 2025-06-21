@@ -8,6 +8,7 @@
 
   ![License](https://img.shields.io/badge/license-MIT-blue)
   ![Contributors](https://img.shields.io/github/contributors/prmditya/smart-lele)
+  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1oMugp5VTvx9_zr6YFHPQmJoJz0y_gs6r?usp=sharing)
 
 </div>
 
