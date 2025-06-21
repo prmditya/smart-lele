@@ -6,9 +6,9 @@
 <br>
 <div align=center>
 
-  ![License](https://img.shields.io/badge/license-MIT-blue)
-  ![Contributors](https://img.shields.io/github/contributors/prmditya/smart-lele)
-  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1oMugp5VTvx9_zr6YFHPQmJoJz0y_gs6r?usp=sharing)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Contributors](https://img.shields.io/github/contributors/prmditya/smart-lele)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1oMugp5VTvx9_zr6YFHPQmJoJz0y_gs6r?usp=sharing)
 
 </div>
 
@@ -43,17 +43,17 @@ smart-lele/
 ├── cloud/            # Cloud Architecture
 ├── hardware/         # Hardware schematic
 ├── microcontrollers/ # Main Microcontrollers code
-├── model-dev/        # Model development code
+├── model-dev/        # Model development (moved to google colab badge on top)
 ├── web-dev/          # Web development code
 └── README.md
 ```
+
 ## Acknowledgements
 
 I would like to express my gratitude to the following resources and individuals who contributed to this project:
 
 - The source dataset for this project : [Real-Time Pond Water Dataset for Fish Farming](https://www.kaggle.com/datasets/monirmukul/realtime-pond-water-dataset-for-fish-farming).
 - I would also like to thank my friends, [Gilang Putro P.](), [Chairulianyah Ananda P.](), [Ahmad Fajar M.](), and [Pranadja Anegra A.](), for their support and assistance throughout the development of this project.
-
 
 ## **License**
 
