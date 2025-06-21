@@ -1,0 +1,22 @@
+# Ignored files and directories for Git in smart-lele project
+
+# Environment variables (CRITICAL: contains sensitive info like passwords)
+.env
+
+# Terraform specific (contains state files and local caches)
+# These files should NOT be committed to Git, especially .tfstate
+# It's best practice to manage Terraform state remotely (e.g., S3, Azure Blob, GCS)
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/.terraform.lock.hcl
+terraform/crash.log
+terraform/terraform.tfstate.d/
+
+# Docker Volume / persistent data
+docker/
+docker/mysql-data/
+
+# Common OS and IDE specific files
+*.swp
+*.bak
