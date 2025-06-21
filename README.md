@@ -11,7 +11,13 @@
 
 </div>
 
-Screenshots:
+<div align=center>
+
+  <img src="https://github.com/user-attachments/assets/74fa796c-4da0-4bd9-8806-e9ab8a97dbbe" alt="image" width=600/>
+
+</div>
+
+<br/>
 
 ![image](https://github.com/user-attachments/assets/a66f1762-7646-4655-ae45-1aded773b46a)
 
